@@ -1,0 +1,19 @@
+{
+  "name": "traveling-blog-website",
+  "version": "1.0.0",
+  "description": "A blog website for travelers/traveling.",
+  "license": "ISC",
+  "author": "Chukwunweike",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "axios": "^1.13.4",
+    "body-parser": "^2.2.2",
+    "express": "^5.2.1"
+  }
+}
