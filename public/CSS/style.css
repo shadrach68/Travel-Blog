@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: var(--main-font);
     a{
         cursor: pointer;
     }
@@ -13,8 +13,10 @@
 
 :root{
     --main-font: "Roboto", sans-serif;
+    --second-font: "Lato", sans-serif;
     --orange-color: #FFA500;
     --blue-color:#0336FF;
+
 }
 
 .logo{
@@ -44,8 +46,9 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 15px 0;
-    gap: 25rem;
+    padding: 25px 0;
+    gap: 13.5rem;
+    font-family: var(--main-font);
 
     .nav-btn{
         display: flex;
@@ -55,7 +58,7 @@ nav{
             
             a{
                 text-decoration: none;
-                margin-left: 90px;
+                margin-right: 105px;
                 color: var(--orange-color);
                 font-weight: 500;
             }
@@ -72,5 +75,75 @@ nav{
             border-radius: 20px;
         }
     }
+}
+
+header{
+    background-image: url(/images/hero\ pic.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+
+
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        position: relative;
+
+        .counter{
+            font-size: 30px;
+            font-weight: 700;
+            font-family: var(--second-font);
+            margin-top: 2.5rem;
+        }
+
+        h2{
+            font-size: 64px;
+            font-weight: 800;
+            font-family: var(--second-font);
+            max-width: 650px;
+            text-align: center;
+            margin-top: 2.5rem;
+        }
+        
+        .num{
+            color: var(--orange-color);
+        }
+        .num-2{
+            color: var(--orange-color);
+            margin-left: 20px;
+        }
+
+        .read-more{
+            text-decoration: none;
+            color: white;
+            padding: 20px 40px;
+            background: var(--blue-color);
+            border-radius: 20px;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: var(--second-font);
+            margin-top: 2.8rem;
+        }
+
+        .scroll-txt{
+            font-size: 24px;
+            font-weight: 500;
+            font-family: var(--main-font);
+            margin-top: 2.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .location-icon{
+            position: absolute;
+            right: 70px;
+            bottom: -20px;
+            
+        }
+    }
+
 }
 
