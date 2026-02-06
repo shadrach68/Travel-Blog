@@ -42,6 +42,7 @@
 
 }
 
+/* navbar start */
 nav{
     display: flex;
     justify-content: space-around;
@@ -76,7 +77,9 @@ nav{
         }
     }
 }
+/* navbar end */
 
+/* header start */
 header{
     background-image: url(/images/hero\ pic.png);
     background-position: top;
@@ -146,6 +149,15 @@ header{
     }
 
 }
+/* header end */
+
+/* main  start */
+main{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat();
+}
+/* main  end */
 
 
 
