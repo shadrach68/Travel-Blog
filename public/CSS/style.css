@@ -154,8 +154,98 @@ header{
 /* main  start */
 main{
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat();
+    grid-template-columns: 460px auto;
+    justify-content: center;
+    align-items: stretch;
+    gap: 100px;
+    margin-top: -50px;
+
+    /* about-sec start */
+    .about-sec{
+         box-shadow: 0 0 50px -20px black;
+         display: flex;
+         align-items:center;
+         justify-content: center;
+         flex-direction: column;
+         border-radius: 5px;
+         width: 438px;
+         height: 598px;
+
+         p{
+            max-width: 340px;
+            margin-top: 10px;
+            font-size: 16.38px;
+            font-weight: 500;
+            line-height: 20.64px;
+            font-family: var(--second-font);
+         }
+
+
+        h2{
+            text-align: center;
+            margin: 10px 0;
+            font-size: 29.65px;
+            font-weight: 700;
+            line-height: 51.39px;
+            font-family: var(--second-font);
+        }
+
+        a{
+            background: blue;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-decoration: none;
+            font-weight: 600;
+            font-family: var(--second-font);
+            font-size: 17px;
+        }
+    }
+    /* about-sec end */
+
+    /* travelers-guide start */
+    .travelers-guide{
+        width: 783.12px;
+        height: 862px;
+        box-shadow: 0 0 50px -20px black;
+
+        .date{
+            font-family: var(--second-font);
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 33.81px;
+            padding-left: 25px;
+            border-left: 4px  solid var(--orange-color);
+            margin-top: 12px;
+        }
+
+        h3{
+            font-family: var(--second-font);
+            font-weight: 600;
+            font-size: 28.64px;
+            max-width: 600px;
+            line-height: 46.98px;
+            padding-left: 25px;
+        }
+
+        .lorem{
+            font-size: 24px;
+            font-family: var(--second-font);
+            font-weight: 500;
+            line-height: 40px;
+            padding-left: 25px;
+            max-width: 750px;
+        }
+
+        .loc-comm{
+            display: flex;
+            
+        }
+
+    }
+    /* travelers-guide end */
+
 }
 /* main  end */
 
