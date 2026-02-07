@@ -9,396 +9,448 @@
   <body>
     <!-- header section start -->
     <header>
-     <%- include("partials/navbar.ejs") %>
+      <%- include("partials/navbar.ejs") %>
 
-     <section class="hero-section">
-        <p class="counter">THE COUNTER: <span class="num">70</span> Countries <span class="num-2"> 1036</span> Cities</p>
+      <section class="hero-section">
+        <p class="counter">
+          THE COUNTER: <span class="num">70</span> Countries
+          <span class="num-2"> 1036</span> Cities
+        </p>
         <h2>Leave your mark on all over the world</h2>
         <a href="#" class="read-more">Read More</a>
 
         <p class="scroll-txt">Scroll Down to Continue</p>
-        <img src="/images/downicon.png" alt="down-icon">
+        <img src="/images/downicon.png" alt="down-icon" />
 
         <div class="location-icon">
-            <img src="/images/location logo.png" alt="location-icon">
+          <img src="/images/location logo.png" alt="location-icon" />
         </div>
-
-     </section>
+      </section>
     </header>
-<!-- header section end -->
+    <!-- header section end -->
 
     <!-- main start -->
-     <main>
-      <!-- about start -->
-      <section class="about-sec">
-        <h2>About Me</h2>
-        <div class="about-cont">
-        <img src="/images/about me pic.png" alt="my-picture">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum in vel massa donec sit. Mi ut risus sem malesuada ornare. Ac eu erat eget et lorem est arcu. Gravida hendrerit sit blandit semper lacus. Nulla amet suscipit sit lectus tortor. Dolor non eget suspendisse leo scelerisque sed d.</p>
-        </div>
-        <a href="#">Read More</a>
-      </section>
-      <!-- about end -->
+    <main>
+      <aside class="aside-content">
+        <!-- about start -->
+        <section class="about-sec">
+          <h2>About Me</h2>
+          <div class="about-cont">
+            <img src="/images/about me pic.png" alt="my-picture" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum in
+              vel massa donec sit. Mi ut risus sem malesuada ornare. Ac eu erat
+              eget et lorem est arcu. Gravida hendrerit sit blandit semper
+              lacus. Nulla amet suscipit sit lectus tortor. Dolor non eget
+              suspendisse leo scelerisque sed d.
+            </p>
+          </div>
+          <a href="#">Read More</a>
+        </section>
+        <!-- about end -->
 
-      <!-- travelers-guide start -->
-      <section class="travelers-guide">
-        <img src="/images/buspic.png" alt="bus-pic">
-        <!-- <div class="travel-cont"> -->
-        <p class="date">July, 15, 2021 - Tips and Tricks</p>
-        <h3>A traveler’s guide to Penang, Malaysia - Where to Eat, Drink, Sleep and Explore</h3>
-        <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra pharetra ac erat commodo non leo eget gravida viverra. Pharetra pharetra.</p>
-
-        <div class="loc-comm">
-          <div class="loc">
-            <img src="/images/location.png" alt="location-icon">
-            <p>Penang, Malaysia</p>
-          </div>
-
-          <div class="comm">
-            <img src="/images/comment.png" alt="message-icon">
-            <p>comment (52)</p>
-          </div>
-          <!-- </div> -->
-        </div>
-      </section>
-      <!-- travelers-guide end -->
-
-      <!-- categories start -->
-      <section class="categories">
-        <h2>Categories</h2>
-        <div class="cate-content">
-          <div class="cont">
-            <p>Europe</p>
-            <p>(11)</p>
-          </div>
-          <div class="cont">
-            <p>Mountains</p>
-            <p>(11)</p>
-          </div>
-          <div class="cont">
-            <p>Traveling video</p>
-            <p>(11)</p>
-          </div>
-          <div class="cont">
-            <p>Beauty of Seas</p>
-            <p>(11)</p>
-          </div>
-          <div class="cont">
-            <p>cuisine</p>
-            <p>(11)</p>
-          </div>
-          <div class="cont">
-            <p>Guides for traveler</p>
-            <p>(11)</p>
-          </div>
-          <div class="cont">
-            <p>Other</p>
-            <p>(11)</p>
-          </div>
-        </div>
-      </section>
-      <!-- categories end -->
-
-      <!-- double-blog start -->
-      <section class="doub-blog">
-        <aside class="first-blog">
-          <img src="/images/whitebus.png" alt="bus-pic">
-          <div class="doub-cont">
-          <p>September 17, 2021 - Tips & Tricks</p>
-          <h3>Have you read The Beach by Alex?</h3>
-
-            <div class="d-blog-loc-comm">
-              <div class="d-blog-loc">
-                <img src="/images/location.png" alt="location-icon">
-                <p>Georgia</p>
-              </div>
-              <div class="d-blog-comm">
-                <img src="/images/comment.png" alt="comment-icon">
-                <p>Comment (52)</p>
-              </div>
+        <!-- categories start -->
+        <section class="categories">
+          <h2>Categories</h2>
+          <div class="cate-content">
+            <div class="cont">
+              <p>Europe</p>
+              <p>(11)</p>
+            </div>
+            <div class="cont">
+              <p>Mountains</p>
+              <p>(11)</p>
+            </div>
+            <div class="cont">
+              <p>Traveling video</p>
+              <p>(11)</p>
+            </div>
+            <div class="cont">
+              <p>Beauty of Seas</p>
+              <p>(11)</p>
+            </div>
+            <div class="cont">
+              <p>cuisine</p>
+              <p>(11)</p>
+            </div>
+            <div class="cont">
+              <p>Guides for traveler</p>
+              <p>(11)</p>
+            </div>
+            <div class="cont">
+              <p>Other</p>
+              <p>(11)</p>
             </div>
           </div>
-        </aside>
-        <aside class="second-blog">
-          <img src="/images/citynight.png" alt="city-pic">
-          <div class="doub-cont">
-          <p>September 17, 2021 - Tips & Tricks</p>
-          <h3>The writer actually live in Philippines</h3>
+        </section>
+        <!-- categories end -->
 
-            <div class="d-blog-loc-comm">
-              <div class="d-blog-loc">
-                <img src="/images/location.png" alt="location-icon">
-                <p>Georgia</p>
-              </div>
-              <div class="d-blog-comm">
-                <img src="/images/comment.png" alt="comment-icon">
-                <p>Comment (52)</p>
-              </div>
+        <!-- popular-post start -->
+        <section class="popular-post">
+          <h2>Popular Post</h2>
+
+          <div class="popu-post">
+            <p>September 17, 2021 - Tips & Tricks</p>
+            <h3>Finding Love & home in Tbilisi, Georgia</h3>
+
+            <div class="popu-btns">
+              <button type="button">
+                <img src="/images/left-arrow.png" alt="left-arrow" />
+              </button>
+              <button type="button">
+                <img src="/images/right-arrow.png" alt="right-arrow" />
+              </button>
             </div>
           </div>
-        </aside>
-      </section>
-      <!-- double-blog end -->
+        </section>
+        <!-- popular-post end -->
 
-      <!-- popular-post start -->
-       <section class="popular-post">
-        <h2>Popular Post</h2>
+        <!-- Recent post start -->
+        <section class="recent-post">
+          <h2>Recent Post</h2>
 
-        <div class="popu-post">
-          <p>September 17, 2021 - Tips & Tricks</p>
-          <h3>Finding Love & home in Tbilisi, Georgia</h3>
-
-          <div class="popu-btns">
-            <button type="button"><img src="/images/left-arrow.png" alt="left-arrow"></button>
-            <button type="button"><img src="/images/right-arrow.png" alt="right-arrow"></button>
+          <div class="rece-posts">
+            <img src="/images/image 8.png" alt="pic" />
+            <p>September 17, 2018 - Tips & Tricks</p>
+            <p>Finding Love & home in Tbilisi, Georgia</p>
           </div>
-        </div>
-       </section>
-      <!-- popular-post end -->
+          <div class="rece-posts">
+            <img src="/images/image 9.png" alt="pic" />
+            <p>September 17, 2018 - Tips & Tricks</p>
+            <p>Finding Love & home in Tbilisi, Georgia</p>
+          </div>
+          <div class="rece-posts">
+            <img src="/images/image 9.png" alt="pic" />
+            <p>September 17, 2018 - Tips & Tricks</p>
+            <p>Finding Love & home in Tbilisi, Georgia</p>
+          </div>
+        </section>
+        <!-- Recent post end -->
 
-      <!-- finding love start -->
+        <!-- Gear start -->
+        <section class="gear">
+          <h2>Gear I Use</h2>
+          <h3>What's in My Bag??</h3>
+          <p>
+            Unfortunately, there is no “one-size-fits-all” when it comes to
+            travel packing lists.
+          </p>
+          <button type="button">View Details</button>
+        </section>
+        <!-- Gear end -->
+
+        <!-- Product start -->
+        <section class="product">
+          <h2>Product That I Have</h2>
+          <div class="products">
+            <img src="/images/macbook.png" alt="apple-macbook" />
+            <p>Apple MacBook Air MJV2ELL/A 13-inch Laptop</p>
+            <p>$514</p>
+          </div>
+          <div class="products">
+            <img src="/images/iphone.png" alt="iphone-xs" />
+            <p>Iphone Xs case, Iphone X case, SUPCASE</p>
+            <p>$267</p>
+          </div>
+          <div class="products">
+            <img src="/images/watch.png" alt="apple-watch" />
+            <p>Master Sport band for Apple wrist watch</p>
+            <p>$378</p>
+          </div>
+        </section>
+        <!-- Product end -->
+
+        <!-- Get in Touch start -->
+        <section class="get-in-touch">
+          <h2>Get In Touch</h2>
+          <div class="g-i-t-btns">
+            <button type="button">
+              <img src="/images/fb-icon.png" alt="fb-icon" /><span
+                >65.5K Likes</span
+              >
+            </button>
+            <button type="button">
+              <img src="/images/twitter-icon.png" alt="twitter-icon" /><span
+                >105 k Followers</span
+              >
+            </button>
+            <button type="button">
+              <img src="/images/youtube-icon.png" alt="youtube-icon" /><span
+                >1.5 M Subscribers</span
+              >
+            </button>
+            <button type="button">
+              <img src="/images/instagram-icon.png" alt="instagram-icon" /><span
+                >85 k Followers</span
+              >
+            </button>
+          </div>
+        </section>
+        <!-- Get in Touch end -->
+      </aside>
+
+      <!-- main articles start -->
+      <article class="main-articles">
+        <!-- travelers-guide start -->
         <section class="travelers-guide">
-        <img src="/images/youtube.png" alt="youtube-pic">
-        <div class="travel-cont">
-        <p>July, 15, 2021 - Tips and Tricks</p>
-        <h3>Finding Love & home in Tbilisi, Georgia</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra pharetra ac erat commodo non leo eget gravida viverra. Pharetra pharetra.</p>
+          <img src="/images/buspic.png" alt="bus-pic" />
+          <!-- <div class="travel-cont"> -->
+          <p class="date">July, 15, 2021 - Tips and Tricks</p>
+          <h3>
+            A traveler’s guide to Penang, Malaysia - Where to Eat, Drink, Sleep
+            and Explore
+          </h3>
+          <p class="lorem">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+            pharetra ac erat commodo non leo eget gravida viverra. Pharetra
+            pharetra.
+          </p>
 
-        <div class="loc-comm">
-          <div class="loc">
-            <img src="/images/location.png" alt="location-icon">
-            <p>Penang, Malaysia</p>
+          <div class="loc-comm">
+            <div class="loc">
+              <img src="/images/location.png" alt="location-icon" />
+              <p>Penang, Malaysia</p>
+            </div>
+
+            <div class="comm">
+              <img src="/images/comment.png" alt="message-icon" />
+              <p>comment (52)</p>
+            </div>
+            <!-- </div> -->
           </div>
+        </section>
+        <!-- travelers-guide end -->
 
-          <div class="comm">
-            <img src="/images/comment.png" alt="message-icon">
-            <p>comment (52)</p>
+        <!-- double-blog start -->
+        <section class="doub-blog">
+          <aside class="first-blog">
+            <img src="/images/whitebus.png" alt="bus-pic" />
+            <div class="doub-cont">
+              <p>September 17, 2021 - Tips & Tricks</p>
+              <h3>Have you read The Beach by Alex?</h3>
+
+              <div class="d-blog-loc-comm">
+                <div class="d-blog-loc">
+                  <img src="/images/location.png" alt="location-icon" />
+                  <p>Georgia</p>
+                </div>
+                <div class="d-blog-comm">
+                  <img src="/images/comment.png" alt="comment-icon" />
+                  <p>Comment (52)</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <aside class="second-blog">
+            <img src="/images/citynight.png" alt="city-pic" />
+            <div class="doub-cont">
+              <p>September 17, 2021 - Tips & Tricks</p>
+              <h3>The writer actually live in Philippines</h3>
+
+              <div class="d-blog-loc-comm">
+                <div class="d-blog-loc">
+                  <img src="/images/location.png" alt="location-icon" />
+                  <p>Georgia</p>
+                </div>
+                <div class="d-blog-comm">
+                  <img src="/images/comment.png" alt="comment-icon" />
+                  <p>Comment (52)</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </section>
+        <!-- double-blog end -->
+
+        <!-- finding love start -->
+        <section class="travelers-guide">
+          <img src="/images/youtube.png" alt="youtube-pic" />
+          <div class="travel-cont">
+            <p>July, 15, 2021 - Tips and Tricks</p>
+            <h3>Finding Love & home in Tbilisi, Georgia</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+              pharetra ac erat commodo non leo eget gravida viverra. Pharetra
+              pharetra.
+            </p>
+
+            <div class="loc-comm">
+              <div class="loc">
+                <img src="/images/location.png" alt="location-icon" />
+                <p>Penang, Malaysia</p>
+              </div>
+
+              <div class="comm">
+                <img src="/images/comment.png" alt="message-icon" />
+                <p>comment (52)</p>
+              </div>
+            </div>
           </div>
-          </div>
-        </div>
-      </section>
-      <!-- finding love end -->
+        </section>
+        <!-- finding love end -->
 
-      <!-- Recent post start -->
-       <section class="recent-post">
-        <h2>Recent Post</h2>
-
-        <div class="rece-posts">
-          <img src="/images/image 8.png" alt="pic">
-          <p>September 17, 2018 - Tips & Tricks</p>
-          <p>Finding Love & home in Tbilisi, Georgia</p>
-        </div>
-        <div class="rece-posts">
-          <img src="/images/image 9.png" alt="pic">
-          <p>September 17, 2018 - Tips & Tricks</p>
-          <p>Finding Love & home in Tbilisi, Georgia</p>
-        </div>
-        <div class="rece-posts">
-          <img src="/images/image 9.png" alt="pic">
-          <p>September 17, 2018 - Tips & Tricks</p>
-          <p>Finding Love & home in Tbilisi, Georgia</p>
-        </div>
-
-       </section>
-      <!-- Recent post end -->
-
-      <!-- Gear start -->
-       <section class="gear">
-        <h2>Gear I Use</h2>
-        <h3>What's in My Bag??</h3>
-        <p>Unfortunately, there is no “one-size-fits-all” when it comes to travel packing lists.</p>
-        <button type="button">View Details</button>
-       </section>
-      <!-- Gear end -->
-
-      <!-- purchase start -->
-       <section class="purchase">
-        <h2>Want <strong>Me to Purchase</strong> Something For You That isn’t available in your Country?</h2>
+        <!-- purchase start -->
+        <section class="purchase">
+          <h2>
+            Want <strong>Me to Purchase</strong> Something For You That isn’t
+            available in your Country?
+          </h2>
           <button type="button">Place Order</button>
-       </section>
-      <!-- purchase end -->
+        </section>
+        <!-- purchase end -->
 
-      <!-- Product start -->
-       <section class="product">
-        <h2>Product That I Have</h2>
-        <div class="products">
-          <img src="/images/macbook.png" alt="apple-macbook">
-          <p>Apple MacBook Air MJV2ELL/A 13-inch Laptop</p>
-          <p>$514</p>
-        </div>
-        <div class="products">
-          <img src="/images/iphone.png" alt="iphone-xs">
-          <p>Iphone Xs case, Iphone X case, SUPCASE</p>
-          <p>$267</p>
-        </div>
-        <div class="products">
-          <img src="/images/watch.png" alt="apple-watch">
-          <p>Master Sport band for Apple wrist watch</p>
-          <p>$378</p>
-        </div>
-       </section>
-      <!-- Product end -->
+        <!-- double-blog start -->
+        <section class="doub-blog">
+          <aside class="first-blog">
+            <img src="/images/handwithworld.png" alt="small-world-pic" />
+            <div class="doub-cont">
+              <p>September 17, 2021 - Tips & Tricks</p>
+              <h3>Get away from the maddening Crowds</h3>
 
-      <!-- double-blog start -->
-      <section class="doub-blog">
-        <aside class="first-blog">
-          <img src="/images/handwithworld.png" alt="small-world-pic">
-          <div class="doub-cont">
-          <p>September 17, 2021 - Tips & Tricks</p>
-          <h3>Get away from the maddening Crowds</h3>
-
-            <div class="d-blog-loc-comm">
-              <div class="d-blog-loc">
-                <img src="/images/location.png" alt="location-icon">
-                <p>Georgia</p>
-              </div>
-              <div class="d-blog-comm">
-                <img src="/images/comment.png" alt="comment-icon">
-                <p>Comment (42)</p>
+              <div class="d-blog-loc-comm">
+                <div class="d-blog-loc">
+                  <img src="/images/location.png" alt="location-icon" />
+                  <p>Georgia</p>
+                </div>
+                <div class="d-blog-comm">
+                  <img src="/images/comment.png" alt="comment-icon" />
+                  <p>Comment (42)</p>
+                </div>
               </div>
             </div>
-          </div>
-        </aside>
-        <aside class="second-blog">
-          <img src="/images/shatteredmirror.png" alt="toon">
-          <div class="doub-cont">
-          <p>September 17, 2021 - Tips & Tricks</p>
-          <h3>Matsumoto Castle is considered one of</h3>
+          </aside>
+          <aside class="second-blog">
+            <img src="/images/shatteredmirror.png" alt="toon" />
+            <div class="doub-cont">
+              <p>September 17, 2021 - Tips & Tricks</p>
+              <h3>Matsumoto Castle is considered one of</h3>
 
-            <div class="d-blog-loc-comm">
-              <div class="d-blog-loc">
-                <img src="/images/location.png" alt="location-icon">
-                <p>Georgia</p>
-              </div>
-              <div class="d-blog-comm">
-                <img src="/images/comment.png" alt="comment-icon">
-                <p>Comment (32)</p>
-              </div>
-            </div>
-          </div>
-        </aside>
-      </section>
-      <!-- double-blog end -->
-
-      <!-- Get in Touch start -->
-       <section class="get-in-touch">
-        <h2>Get In Touch</h2>
-        <div class="g-i-t-btns">
-          <button type="button"><img src="/images/fb-icon.png" alt="fb-icon"><span>65.5K Likes</span></button>
-          <button type="button"><img src="/images/twitter-icon.png" alt="twitter-icon"><span>105 k Followers</span></button>
-          <button type="button"><img src="/images/youtube-icon.png" alt="youtube-icon"><span>1.5 M Subscribers</span></button>
-          <button type="button"><img src="/images/instagram-icon.png" alt="instagram-icon"><span>85 k Followers</span></button>
-        </div>
-       </section>
-      <!-- Get in Touch end -->
-
-      <!-- double-blog start -->
-      <section class="doub-blog">
-        <aside class="first-blog">
-          <img src="/images/japan city.png" alt="city-night pic">
-          <div class="doub-cont">
-          <p>September 17, 2021 - Tips & Tricks</p>
-          <h3>Many buildings especially in Japan</h3>
-
-            <div class="d-blog-loc-comm">
-              <div class="d-blog-loc">
-                <img src="/images/location.png" alt="location-icon">
-                <p>Georgia</p>
-              </div>
-              <div class="d-blog-comm">
-                <img src="/images/comment.png" alt="comment-icon">
-                <p>Comment (42)</p>
+              <div class="d-blog-loc-comm">
+                <div class="d-blog-loc">
+                  <img src="/images/location.png" alt="location-icon" />
+                  <p>Georgia</p>
+                </div>
+                <div class="d-blog-comm">
+                  <img src="/images/comment.png" alt="comment-icon" />
+                  <p>Comment (32)</p>
+                </div>
               </div>
             </div>
-          </div>
-        </aside>
-        <aside class="second-blog">
-          <img src="/images/deer.png" alt="deer pic">
-          <div class="doub-cont">
-          <p>September 17, 2021 - Tips & Tricks</p>
-          <h3>There are roughly 1200 semiwild dear</h3>
+          </aside>
+        </section>
+        <!-- double-blog end -->
 
-            <div class="d-blog-loc-comm">
-              <div class="d-blog-loc">
-                <img src="/images/location.png" alt="location-icon">
-                <p>Georgia</p>
-              </div>
-              <div class="d-blog-comm">
-                <img src="/images/comment.png" alt="comment-icon">
-                <p>Comment (32)</p>
+        <!-- double-blog start -->
+        <section class="doub-blog">
+          <aside class="first-blog">
+            <img src="/images/japan city.png" alt="city-night pic" />
+            <div class="doub-cont">
+              <p>September 17, 2021 - Tips & Tricks</p>
+              <h3>Many buildings especially in Japan</h3>
+
+              <div class="d-blog-loc-comm">
+                <div class="d-blog-loc">
+                  <img src="/images/location.png" alt="location-icon" />
+                  <p>Georgia</p>
+                </div>
+                <div class="d-blog-comm">
+                  <img src="/images/comment.png" alt="comment-icon" />
+                  <p>Comment (42)</p>
+                </div>
               </div>
             </div>
-          </div>
-        </aside>
-      </section>
-      <!-- double-blog end -->
+          </aside>
+          <aside class="second-blog">
+            <img src="/images/deer.png" alt="deer pic" />
+            <div class="doub-cont">
+              <p>September 17, 2021 - Tips & Tricks</p>
+              <h3>There are roughly 1200 semiwild dear</h3>
 
-       <!-- finding love start -->
+              <div class="d-blog-loc-comm">
+                <div class="d-blog-loc">
+                  <img src="/images/location.png" alt="location-icon" />
+                  <p>Georgia</p>
+                </div>
+                <div class="d-blog-comm">
+                  <img src="/images/comment.png" alt="comment-icon" />
+                  <p>Comment (32)</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </section>
+        <!-- double-blog end -->
+
+        <!-- finding love start -->
         <section class="travelers-guide">
-        <img src="/images/youtube.png" alt="youtube-pic">
-        <div class="travel-cont">
-        <p>July, 15, 2021 - Tips and Tricks</p>
-        <h3>Finding Love & home in Tbilisi, Georgia</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra pharetra ac erat commodo non leo eget gravida viverra. Pharetra pharetra.</p>
+          <img src="/images/youtube.png" alt="youtube-pic" />
+          <div class="travel-cont">
+            <p>July, 15, 2021 - Tips and Tricks</p>
+            <h3>Finding Love & home in Tbilisi, Georgia</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+              pharetra ac erat commodo non leo eget gravida viverra. Pharetra
+              pharetra.
+            </p>
 
-        <div class="loc-comm">
-          <div class="loc">
-            <img src="/images/location.png" alt="location-icon">
-            <p>Penang, Malaysia</p>
-          </div>
-
-          <div class="comm">
-            <img src="/images/comment.png" alt="message-icon">
-            <p>comment (52)</p>
-          </div>
-          </div>
-        </div>
-      </section>
-      <!-- finding love end -->
-
-           <!-- double-blog start -->
-      <section class="doub-blog">
-        <aside class="first-blog">
-          <img src="/images/whitebus.png" alt="bus-pic">
-          <div class="doub-cont">
-          <p>September 17, 2021 - Tips & Tricks</p>
-          <h3>Have you read The Beach by Alex?</h3>
-
-            <div class="d-blog-loc-comm">
-              <div class="d-blog-loc">
-                <img src="/images/location.png" alt="location-icon">
-                <p>Georgia</p>
+            <div class="loc-comm">
+              <div class="loc">
+                <img src="/images/location.png" alt="location-icon" />
+                <p>Penang, Malaysia</p>
               </div>
-              <div class="d-blog-comm">
-                <img src="/images/comment.png" alt="comment-icon">
-                <p>Comment (52)</p>
+
+              <div class="comm">
+                <img src="/images/comment.png" alt="message-icon" />
+                <p>comment (52)</p>
               </div>
             </div>
           </div>
-        </aside>
-        <aside class="second-blog">
-          <img src="/images/citynight.png" alt="city-pic">
-          <div class="doub-cont">
-          <p>September 17, 2021 - Tips & Tricks</p>
-          <h3>The writer actually live in Philippines</h3>
+        </section>
+        <!-- finding love end -->
 
-            <div class="d-blog-loc-comm">
-              <div class="d-blog-loc">
-                <img src="/images/location.png" alt="location-icon">
-                <p>Georgia</p>
-              </div>
-              <div class="d-blog-comm">
-                <img src="/images/comment.png" alt="comment-icon">
-                <p>Comment (52)</p>
+        <!-- double-blog start -->
+        <section class="doub-blog">
+          <aside class="first-blog">
+            <img src="/images/whitebus.png" alt="bus-pic" />
+            <div class="doub-cont">
+              <p>September 17, 2021 - Tips & Tricks</p>
+              <h3>Have you read The Beach by Alex?</h3>
+
+              <div class="d-blog-loc-comm">
+                <div class="d-blog-loc">
+                  <img src="/images/location.png" alt="location-icon" />
+                  <p>Georgia</p>
+                </div>
+                <div class="d-blog-comm">
+                  <img src="/images/comment.png" alt="comment-icon" />
+                  <p>Comment (52)</p>
+                </div>
               </div>
             </div>
-          </div>
-        </aside>
-      </section>
-      <!-- double-blog end -->
+          </aside>
+          <aside class="second-blog">
+            <img src="/images/citynight.png" alt="city-pic" />
+            <div class="doub-cont">
+              <p>September 17, 2021 - Tips & Tricks</p>
+              <h3>The writer actually live in Philippines</h3>
 
-     </main>
-     <!-- main end -->
-
+              <div class="d-blog-loc-comm">
+                <div class="d-blog-loc">
+                  <img src="/images/location.png" alt="location-icon" />
+                  <p>Georgia</p>
+                </div>
+                <div class="d-blog-comm">
+                  <img src="/images/comment.png" alt="comment-icon" />
+                  <p>Comment (52)</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </section>
+        <!-- double-blog end -->
+      </article>
+      <!-- main articles end -->
+    </main>
+    <!-- main end -->
   </body>
 </html>
