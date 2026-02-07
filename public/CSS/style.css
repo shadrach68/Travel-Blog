@@ -4,7 +4,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  a , button {
+  a,
+  button {
     cursor: pointer;
   }
 }
@@ -13,8 +14,8 @@
   --main-font: "Roboto", sans-serif;
   --second-font: "Lato", sans-serif;
   --orange-color: #ffa500;
-  --blue-color: #0336ff;
-  --box-shadow:0 0 50px 10px rgba(211, 209, 209, 0.274);
+  --blue-color: #0336FF;
+  --box-shadow: 0 0 50px 10px rgba(168, 166, 166, 0.274);
   --border-radius: 10px;
 }
 
@@ -184,7 +185,7 @@ main {
     }
 
     a {
-      background: blue;
+      background: var(--blue-color);
       color: white;
       padding: 15px 30px;
       border-radius: 10px;
@@ -253,98 +254,193 @@ main {
   /* travelers-guide end */
 
   /* categories start */
-  .categories{
+  .categories {
     box-shadow: var(--box-shadow);
     margin-top: 43px;
     width: 450.23px;
     height: 569px;
     border-radius: var(--border-radius);
 
-    h2{
-        text-align: center;
-        padding-top: 16.02px;
-        padding-bottom: 50px;
-        font-family: var(--second-font);
-        font-weight: 700;
-        font-size: 29.65px;
-        line-height: 51.39px;
+    h2 {
+      text-align: center;
+      padding-top: 16.02px;
+      padding-bottom: 50px;
+      font-family: var(--second-font);
+      font-weight: 700;
+      font-size: 29.65px;
+      line-height: 51.39px;
     }
 
-    .cate-content{
-        display: flex;
-        justify-content: space-around;
+    .cate-content {
+      display: flex;
+      justify-content: space-around;
 
-        ul li, ol li{
-            list-style: none;
-            font-size: 24px;
-            font-family: var(--second-font);
-            font-weight: 500;
-            line-height: 40px;
-            padding-bottom: 18px;
-        }
+      ul li,
+      ol li {
+        list-style: none;
+        font-size: 24px;
+        font-family: var(--second-font);
+        font-weight: 500;
+        line-height: 40px;
+        padding-bottom: 18px;
+      }
     }
   }
   /* categories end */
 
   /* popular post start */
-  .popular-post{
+  .popular-post {
     width: 445px;
     height: 507px;
     margin: 43px 0;
     border-radius: var(--border-radius);
 
-
-    h2{
-        box-shadow: var(--box-shadow);
-        padding: 20px 0;
-        border-top-left-radius: var(--border-radius);
-        border-top-right-radius: var(--border-radius);
-        text-align: center;
-        margin-bottom: 43px;
-        font-size: 31.64px;
-        font-weight: 700;
-        font-family: var(--second-font);
-        line-height: 46.98px;
+    h2 {
+      box-shadow: var(--box-shadow);
+      padding: 20px 0;
+      border-top-left-radius: var(--border-radius);
+      border-top-right-radius: var(--border-radius);
+      text-align: center;
+      margin-bottom: 43px;
+      font-size: 31.64px;
+      font-weight: 700;
+      font-family: var(--second-font);
+      line-height: 46.98px;
     }
 
-    .popu-post{
-        background-image: url(/images/whitebus.png);
-        background-position: top;
-        background-size: 507px;
-        background-repeat: no-repeat;
-        height: inherit;
+    .popu-post {
+      background-image: url(/images/whitebus.png);
+      background-position: top;
+      background-size: 507px;
+      background-repeat: no-repeat;
+      height: inherit;
 
+      p {
+        font-family: var(--second-font);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 33.81px;
+        color: #ffff;
+        text-align: center;
+        padding-top: 33px;
+        padding-bottom: 83px;
+      }
 
-        p{
-            font-family: var(--second-font);
-            font-size: 24px;
-            font-weight: 500;
-            line-height: 33.81px;
-            color: #ffff;
-            text-align: center;
-            padding-top: 33px;
-            padding-bottom: 83px;
+      .popu-btns {
+        padding-left: 40px;
+
+        h3 {
+          font-family: var(--second-font);
+          font-weight: 700;
+          font-size: 31.64px;
+          line-height: 46.98px;
+          color: #ffff;
+          padding-bottom: 38.12px;
         }
 
-        .popu-btns{
-            padding-left: 40px;
-
-            h3{
-                font-family: var(--second-font);
-                font-weight: 700;
-                font-size: 31.64px;
-                line-height: 46.98px;
-                color: #ffff;
-                padding-bottom: 38.12px;
-            }
-
-            button{
-                width: 41px;
-                height: 50px;
-            }
+        button {
+          width: 41px;
+          height: 50px;
         }
+      }
     }
   }
   /* popular post end */
+
+  /* recent post start */
+  .recent-post {
+    margin-top: 93px;
+    margin-bottom: 43px;
+
+    h2 {
+      box-shadow: var(--box-shadow);
+      padding: 20px 0;
+      border-top-left-radius: var(--border-radius);
+      border-top-right-radius: var(--border-radius);
+      text-align: center;
+      margin-bottom: 43px;
+      font-size: 31.64px;
+      font-weight: 700;
+      font-family: var(--second-font);
+      line-height: 46.98px;
+    }
+
+    .rece-posts {
+      display: flex;
+      gap: 13px;
+      padding-bottom: 20px;
+
+      .rece-big {
+        font-size: 24px;
+        font-weight: 600;
+        font-family: var(--second-font);
+        line-height: 30px;
+      }
+
+      .rece-sm{
+        font-size: 18px;
+        font-family: var(--second-font);
+        font-weight: 500;
+        line-height: 33.81px;
+      }
+    }
+  }
+  /* recent post end */
+
+  /* gear start */
+  .gear{
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    margin-bottom: 43px;
+    width: 450px;
+    height: 378px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2{
+        padding-top: 13.55px;
+        padding-bottom: 37px;
+        font-family: var(--second-font);
+        font-weight: 700;
+        font-size: 29.65px;
+        line-height: 59.39px;
+    }
+
+    h3{
+        padding-bottom: 26px;
+        font-family: var(--second-font);
+        font-weight: 700;
+        font-size: 29.65px;
+        line-height: 59.39px;
+
+    }
+
+    p{
+        text-align: center;
+        max-width: 330px;
+        padding-bottom: 16px;
+        font-family: var(--second-font);
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 33.81px;
+        color: #0000006b;
+        
+    }
+
+    button{
+        width: 182px;
+        height: 71px;
+        border-radius: 8px;
+        margin-bottom: 17px;
+        border: none;
+        background: var(--blue-color);
+        font-family: var(--second-font);
+        font-weight: 500;
+        color: #ffff;
+        font-size: 16px;
+    }
+  }
+  /* gear end */
 }
 /* main  end */
