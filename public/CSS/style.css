@@ -14,7 +14,7 @@
   --main-font: "Roboto", sans-serif;
   --second-font: "Lato", sans-serif;
   --orange-color: #ffa500;
-  --blue-color: #0336FF;
+  --blue-color: #0336ff;
   --box-shadow: 0 0 50px 10px rgba(168, 166, 166, 0.274);
   --border-radius: 10px;
 }
@@ -377,7 +377,7 @@ main {
         line-height: 30px;
       }
 
-      .rece-sm{
+      .rece-sm {
         font-size: 18px;
         font-family: var(--second-font);
         font-weight: 500;
@@ -388,7 +388,7 @@ main {
   /* recent post end */
 
   /* gear start */
-  .gear{
+  .gear {
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
     margin-bottom: 43px;
@@ -398,49 +398,87 @@ main {
     flex-direction: column;
     align-items: center;
 
-    h2{
-        padding-top: 13.55px;
-        padding-bottom: 37px;
-        font-family: var(--second-font);
-        font-weight: 700;
-        font-size: 29.65px;
-        line-height: 59.39px;
+    h2 {
+      padding-top: 13.55px;
+      padding-bottom: 37px;
+      font-family: var(--second-font);
+      font-weight: 700;
+      font-size: 29.65px;
+      line-height: 59.39px;
     }
 
-    h3{
-        padding-bottom: 26px;
-        font-family: var(--second-font);
-        font-weight: 700;
-        font-size: 29.65px;
-        line-height: 59.39px;
-
+    h3 {
+      padding-bottom: 26px;
+      font-family: var(--second-font);
+      font-weight: 700;
+      font-size: 29.65px;
+      line-height: 59.39px;
     }
 
-    p{
-        text-align: center;
-        max-width: 330px;
-        padding-bottom: 16px;
-        font-family: var(--second-font);
-        font-size: 24px;
-        font-weight: 300;
-        line-height: 33.81px;
-        color: #0000006b;
-        
+    p {
+      text-align: center;
+      max-width: 330px;
+      padding-bottom: 16px;
+      font-family: var(--second-font);
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 33.81px;
+      color: #0000006b;
     }
 
-    button{
-        width: 182px;
-        height: 71px;
-        border-radius: 8px;
-        margin-bottom: 17px;
-        border: none;
-        background: var(--blue-color);
-        font-family: var(--second-font);
-        font-weight: 500;
-        color: #ffff;
-        font-size: 16px;
+    button {
+      width: 182px;
+      height: 71px;
+      border-radius: 8px;
+      margin-bottom: 17px;
+      border: none;
+      background: var(--blue-color);
+      font-family: var(--second-font);
+      font-weight: 500;
+      color: #ffff;
+      font-size: 16px;
     }
   }
   /* gear end */
+
+  /* products start */
+  .product {
+    width: 456px;
+    height: 491px;
+
+
+
+    h2 {
+      box-shadow: var(--box-shadow);
+      padding: 20px 0;
+      border-top-left-radius: var(--border-radius);
+      border-top-right-radius: var(--border-radius);
+      text-align: center;
+      margin-bottom: 43px;
+      font-size: 31.64px;
+      font-weight: 700;
+      font-family: var(--second-font);
+      line-height: 46.98px;
+    }
+
+    .products{
+        display: flex;
+        gap: 14px;
+        padding-bottom: 36px;
+
+        .prod-name,.prod-price{
+            font-family: var(--second-font);
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 30px;
+            max-width: 310px;
+        }
+
+        .prod-price{
+            color: var(--blue-color);
+        }
+    }
+  }
+  /* products end */
 }
 /* main  end */
