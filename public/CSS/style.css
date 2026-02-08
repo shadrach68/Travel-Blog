@@ -155,6 +155,7 @@ main {
   gap: 100px;
   margin-top: -50px;
 
+  /* ASIDE START */
   /* about-sec start */
   .about-sec {
     box-shadow: var(--box-shadow);
@@ -197,61 +198,6 @@ main {
     }
   }
   /* about-sec end */
-
-  /* travelers-guide start */
-  .travelers-guide {
-    width: 783.12px;
-    height: 862px;
-    box-shadow: var(--box-shadow);
-    border-radius: var(--border-radius);
-
-    .date {
-      font-family: var(--second-font);
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 33.81px;
-      padding-left: 25px;
-      border-left: 4px solid var(--orange-color);
-      margin-top: 12px;
-    }
-
-    h3 {
-      font-family: var(--second-font);
-      font-weight: 600;
-      font-size: 28.64px;
-      max-width: 600px;
-      line-height: 46.98px;
-      padding-left: 25px;
-    }
-
-    .lorem {
-      font-size: 24px;
-      font-family: var(--second-font);
-      font-weight: 500;
-      line-height: 40px;
-      padding-left: 25px;
-      max-width: 750px;
-      margin-bottom: 5rem;
-    }
-
-    .loc-comm {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 25px;
-
-      .loc,
-      .comm {
-        display: flex;
-        gap: 10px;
-        font-size: 18px;
-        font-weight: 500;
-        font-family: var(--second-font);
-        /* line-height: 40px; */
-      }
-    }
-  }
-  /* travelers-guide end */
 
   /* categories start */
   .categories {
@@ -445,8 +391,7 @@ main {
   .product {
     width: 456px;
     height: 491px;
-
-
+    margin-bottom: 43px;
 
     h2 {
       box-shadow: var(--box-shadow);
@@ -461,24 +406,150 @@ main {
       line-height: 46.98px;
     }
 
-    .products{
-        display: flex;
-        gap: 14px;
-        padding-bottom: 36px;
+    .products {
+      display: flex;
+      gap: 14px;
+      padding-bottom: 36px;
 
-        .prod-name,.prod-price{
-            font-family: var(--second-font);
-            font-weight: 600;
-            font-size: 24px;
-            line-height: 30px;
-            max-width: 310px;
-        }
+      .prod-name,
+      .prod-price {
+        font-family: var(--second-font);
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        max-width: 310px;
+      }
 
-        .prod-price{
-            color: var(--blue-color);
-        }
+      .prod-price {
+        color: var(--blue-color);
+      }
     }
   }
   /* products end */
+
+  /* get in touch start */
+  .get-in-touch {
+    width: 450px;
+    height: 307px;
+
+    h2 {
+      box-shadow: var(--box-shadow);
+      padding: 20px 0;
+      border-top-left-radius: var(--border-radius);
+      border-top-right-radius: var(--border-radius);
+      text-align: center;
+      margin-bottom: 43px;
+      font-size: 31.64px;
+      font-weight: 700;
+      font-family: var(--second-font);
+      line-height: 46.98px;
+    }
+
+    .g-i-t-btns {
+      display: grid;
+      grid-template-columns: repeat(2, 182px);
+      grid-template-rows: repeat(2, 71px);
+      gap: 26px;
+      justify-content: center;
+
+      .button {
+        border-radius: 10px;
+        font-family: var(--second-font);
+        font-weight: 700;
+        line-height: 16px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+
+        
+
+        p{
+          max-width: 50px;
+          color: #ffff;
+          margin-right: 70px;
+          font-weight: 700;
+          font-family: var(--second-font);
+        }
+      }
+
+      .fb {
+        background: #4056ac;
+      }
+
+      .X {
+        background: #60b7fe;
+      }
+
+      .youtube {
+        background: #fe2c3c;
+      }
+
+      .insta {
+        background: #e14d93;
+      }
+    }
+  }
+  /* get in touch end */
+
+  /* ASIDE END*/
+
+  /* ARTICLE (MAIN ARTICLES) START */
+  
+    /* travelers-guide start */
+  .travelers-guide {
+    width: 783.12px;
+    height: 862px;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+
+    .date {
+      font-family: var(--second-font);
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 33.81px;
+      padding-left: 25px;
+      border-left: 4px solid var(--orange-color);
+      margin-top: 12px;
+    }
+
+    h3 {
+      font-family: var(--second-font);
+      font-weight: 600;
+      font-size: 28.64px;
+      max-width: 600px;
+      line-height: 46.98px;
+      padding-left: 25px;
+    }
+
+    .lorem {
+      font-size: 24px;
+      font-family: var(--second-font);
+      font-weight: 500;
+      line-height: 40px;
+      padding-left: 25px;
+      max-width: 750px;
+      margin-bottom: 5rem;
+    }
+
+    .loc-comm {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 25px;
+
+      .loc,
+      .comm {
+        display: flex;
+        gap: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: var(--second-font);
+        /* line-height: 40px; */
+      }
+    }
+  }
+  /* travelers-guide end */
+  /* ARTICLE (MAIN ARTICLES) END */
 }
 /* main  end */
