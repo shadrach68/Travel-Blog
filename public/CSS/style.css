@@ -462,9 +462,7 @@ main {
         align-items: center;
         cursor: pointer;
 
-        
-
-        p{
+        p {
           max-width: 50px;
           color: #ffff;
           margin-right: 70px;
@@ -495,8 +493,8 @@ main {
   /* ASIDE END*/
 
   /* ARTICLE (MAIN ARTICLES) START */
-  
-    /* travelers-guide start */
+
+  /* travelers-guide start */
   .travelers-guide {
     width: 783.12px;
     height: 862px;
@@ -541,7 +539,7 @@ main {
       .loc,
       .comm {
         display: flex;
-        gap: 10px;
+        gap: 13px;
         font-size: 18px;
         font-weight: 500;
         font-family: var(--second-font);
@@ -550,6 +548,118 @@ main {
     }
   }
   /* travelers-guide end */
+
+  /* doub-blog start */
+  .doub-blog {
+    display: flex;
+    gap: 25.36px;
+    margin-bottom: 51px;
+    margin-top: 55px;
+
+    .doub-cont {
+      box-shadow: var(--box-shadow);
+      border-radius: var(--border-radius);
+
+      .doub-sm {
+        font-family: var(--second-font);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 33.81px;
+        border-left: 4px solid var(--orange-color);
+        padding-left: 9.11px;
+        margin: 16px 0 72.24px 0;
+      }
+
+      h3 {
+        font-family: var(--second-font);
+        font-weight: 700;
+        font-size: 30.64px;
+        line-height: 46.98px;
+        margin-left: 12.06px;
+        margin-bottom: 109.78px;
+      }
+
+      .d-blog-loc-comm {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+
+        .d-blog-loc,
+        .d-blog-comm {
+          display: flex;
+          gap: 13.15px;
+          font-size: 18px;
+          font-weight: 500;
+          font-family: var(--second-font);
+          margin-bottom: 19.87px;
+        }
+      }
+    }
+
+    aside {
+      width: 377.64px;
+      height: 636.87px;
+    }
+  }
+  /* doub-blog end */
+
+  /* travelers-guide2 start */
+  .travelers-guide2 {
+    width: 783.12px;
+    height: 862px;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+
+    .date2 {
+      font-family: var(--second-font);
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 33.81px;
+      padding-left: 25px;
+      border-left: 4px solid var(--orange-color);
+      margin-top: 20px;
+    }
+
+    h3 {
+      font-family: var(--second-font);
+      font-weight: 600;
+      font-size: 28.64px;
+      max-width: 600px;
+      line-height: 46.98px;
+      padding-left: 25px;
+      margin-top: 26px;
+      margin-bottom: 19px;
+    }
+
+    .lorem-love {
+      font-size: 24px;
+      font-family: var(--second-font);
+      font-weight: 500;
+      line-height: 40px;
+      padding-left: 25px;
+      max-width: 750px;
+      margin-bottom: 5rem;
+    }
+
+    .loc-comm2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 25px;
+
+      .loc,
+      .comm {
+        display: flex;
+        gap: 13px;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: var(--second-font);
+      }
+    }
+  }
+
+  /* travelers-guide2 end */
   /* ARTICLE (MAIN ARTICLES) END */
 }
 /* main  end */
