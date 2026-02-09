@@ -772,7 +772,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 63px;
+  gap: 120px;
   margin-bottom: 51px;
 
   .news-text {
