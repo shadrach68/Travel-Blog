@@ -706,6 +706,8 @@ main {
 .carousel-section {
   width: 100%;
   overflow: hidden;
+  margin-top: 100px;
+  margin-bottom: 134px;
 }
 
 /* Carousel viewport */
@@ -713,6 +715,9 @@ main {
   position: relative;
   height: 296px;
   overflow: hidden;
+}
+.instagram-carousel:hover .carousel-track {
+  animation-play-state: paused;
 }
 
 /* Moving track */
@@ -724,15 +729,13 @@ main {
   animation: scroll-left 30s linear infinite;
 }
 
-/* Images */
 .carousel-track img {
-  width: 260.7px;         /* controls image width */
+  width: 260.7px;
   height: 100%;
   object-fit: cover;
   flex-shrink: 0;
 }
 
-/* Smooth infinite motion */
 @keyframes scroll-left {
   from {
     transform: translateX(0);
@@ -742,21 +745,23 @@ main {
   }
 }
 
-/* Overlay Button */
 .instagram-btn {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
+  font-family: var(--second-font);
+  font-size: 20px;
+  font-weight: 400;
 
-  background: #1e40ff;
+  background: var(--blue-color);
   color: #fff;
   padding: 12px 24px;
   border-radius: 6px;
   font-weight: 600;
   text-decoration: none;
 
-  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 /* carousel section end */
