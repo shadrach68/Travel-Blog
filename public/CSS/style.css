@@ -707,7 +707,7 @@ main {
   width: 100%;
   overflow: hidden;
   margin-top: 100px;
-  margin-bottom: 134px;
+  margin-bottom: 114px;
 }
 
 /* Carousel viewport */
@@ -765,3 +765,62 @@ main {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 /* carousel section end */
+
+/* newsletter start */
+.newsletter {
+  height: 147px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 63px;
+  margin-bottom: 51px;
+
+  .news-text {
+
+    p {
+      font-family: var(--second-font);
+      font-weight: 700;
+      font-size: 30px;
+
+      span {
+        color: var(--blue-color);
+      }
+    }
+  }
+
+  .news-sub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+
+    input{
+      height: 78px;
+      width: 330px;
+      padding: 0 15px;
+      outline: none;
+      border: 2px solid rgba(128, 128, 128, 0.418);
+      border-radius: 10px;
+    }
+
+    input::placeholder{
+      color: rgba(128, 128, 128, 0.418);
+      font-size: 20px;
+      font-weight: 400;
+      font-family: var(--second-font);
+    }
+
+    button{
+      padding: 27px 40px;
+      border: none;
+      border-radius: 10px;
+      background: var(--blue-color);
+      color: #fff;
+      font-family: var(--second-font);
+      font-weight: 400;
+      font-size: 20px;
+      box-shadow: 1px 4px 0px rgba(0, 0, 0, 0.185);
+    }
+  }
+}
+/* newsletter end */
