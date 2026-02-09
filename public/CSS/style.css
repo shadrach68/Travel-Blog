@@ -668,7 +668,6 @@ main {
     margin-top: 53px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 
     h2 {
@@ -702,3 +701,62 @@ main {
   /* ARTICLE (MAIN ARTICLES) END */
 }
 /* main  end */
+
+/* carousel section start */
+.carousel-section {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Carousel viewport */
+.instagram-carousel {
+  position: relative;
+  height: 296px;
+  overflow: hidden;
+}
+
+/* Moving track */
+.carousel-track {
+  display: flex;
+  height: 100%;
+  width: max-content;
+
+  animation: scroll-left 30s linear infinite;
+}
+
+/* Images */
+.carousel-track img {
+  width: 260.7px;         /* controls image width */
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Smooth infinite motion */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Overlay Button */
+.instagram-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+
+  background: #1e40ff;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+/* carousel section end */
