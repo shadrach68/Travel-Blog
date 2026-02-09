@@ -7,6 +7,7 @@
   a,
   button {
     cursor: pointer;
+    text-decoration: none;
   }
 }
 
@@ -776,10 +777,8 @@ main {
   align-items: center;
   gap: 160px;
   margin-bottom: 61px;
-  
 
   .news-text {
-
     p {
       font-family: var(--second-font);
       font-weight: 700;
@@ -791,13 +790,13 @@ main {
     }
   }
 
-  .news-sub{
+  .news-sub {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 19px;
 
-    input{
+    input {
       height: 78px;
       width: 330px;
       padding: 0 15px;
@@ -806,14 +805,14 @@ main {
       border-radius: 10px;
     }
 
-    input::placeholder{
+    input::placeholder {
       color: rgba(128, 128, 128, 0.418);
       font-size: 20px;
       font-weight: 400;
       font-family: var(--second-font);
     }
 
-    button{
+    button {
       padding: 27px 40px;
       border: none;
       border-radius: 10px;
@@ -829,60 +828,130 @@ main {
 /* newsletter end */
 
 /* footer start */
-footer{
+footer {
   height: 651px;
-  border-top: 2px solid  rgba(128, 128, 128, 0.418);
+  border-top: 2px solid rgba(128, 128, 128, 0.418);
 
   /* footer logo start */
   .logo2 {
-  display: flex;
-  gap: 5px;
-
-  .logo-text2 {
-    h2 {
-      font-size: 2rem;
-      color: var(--blue-color);
-    }
-
-    p {
-      color: var(--orange-color);
-      margin-top: -8px;
-      font-size: 13px;
-      font-weight: 700;
-    }
-  }
-
-  img {
-    width: 45px;
-    display: block;
-
-  }
-}
-/* footer loge end */
-
-/* footer-nav start */
-.footer-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 51px 307px 0 204px;
-  font-family: var(--main-font);
-
-  .footer-nav-btn {
     display: flex;
+    gap: 5px;
 
-    li {
-      list-style: none;
+    .logo-text2 {
+      h2 {
+        font-size: 2rem;
+        color: var(--blue-color);
+      }
 
-      a {
-        text-decoration: none;
-        margin-left: 208px;
-        color: #000;
-        font-weight: 500;
+      p {
+        color: var(--orange-color);
+        margin-top: -8px;
+        font-size: 13px;
+        font-weight: 700;
+      }
+    }
+
+    img {
+      width: 45px;
+      display: block;
+    }
+  }
+  /* footer loge end */
+
+  /* footer-nav start */
+  .footer-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 51px 304px 0 207px;
+    font-family: var(--main-font);
+    margin-bottom: 16px;
+    font-weight: 700;
+
+    .footer-nav-btn {
+      display: flex;
+
+      li {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          margin-left: 208px;
+          color: #000;
+          font-weight: 500;
+        }
       }
     }
   }
-}
-/* footer-nav end */
+  /* footer-nav end */
+
+  /* footer content start */
+  .footer-cont-wrapper {
+    background-color: #000000ac;
+    height: inherit;
+
+    .footer-content {
+      grid-template-columns: 337px 191px repeat(2, 153px);
+      display: grid;
+      align-items: center;
+      justify-content: space-around;
+      padding: 51px 213px 0 207px;
+      font-family: var(--main-font);
+      font-weight: 400;
+      line-height: 40px;
+      color: #fff;
+
+      li {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
+      }
+    }
+  }
+  /* footer content end */
+
+  /* footer rights start */
+  .footer-rights {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 205px;
+    padding: 27px 207px 0 207px;
+    border-top: 2px solid rgba(128, 128, 128, 0.418);
+    color: #fff;
+    font-weight: 400;
+    font-family: var(--main-font);
+    line-height: 27px;
+
+    .footer-icons ul {
+      display: flex;
+      gap: 20px;
+
+      .google a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .plusSign {
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+
+      li {
+        list-style: none;
+      }
+    }
+    a {
+      color: #fff;
+    }
+    .footer-date a {
+      margin: 0 10px;
+    }
+  }
+  /* footer rights end */
 }
 /* footer end */
