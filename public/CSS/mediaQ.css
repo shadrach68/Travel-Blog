@@ -1,3 +1,101 @@
+/* Tablet and smaller desktops */
+@media screen and (max-width: 1350px) {
+  main {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin-top: 0;
+    padding: 0 20px;
+  }
+
+  /* To Move sidebar to bottom on smaller screens */
+  main .aside-content {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  main .main-articles {
+    order: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Resetting fixed widths to flexible */
+  .about-sec,
+  .categories,
+  .popular-post,
+  .recent-post,
+  .gear,
+  .product,
+  .get-in-touch {
+    width: 100% !important;
+    max-width: 600px;
+    height: auto !important;
+  }
+
+  .travelers-guide,
+  .travelers-guide2,
+  .purchase {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Fix double blog section */
+  .doub-blog {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .doub-blog aside {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .doub-blog .doub-cont {
+    width: 100%;
+  }
+
+  .doub-blog .doub-cont img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Footer adjustments */
+  footer {
+    height: auto !important;
+  }
+
+  footer .footer-nav {
+    padding: 40px 20px !important;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  footer .footer-nav .footer-nav-btn {
+    margin-left: 0;
+  }
+
+  footer .footer-nav .footer-nav-btn li a {
+    margin-left: 0;
+    margin: 0 15px;
+  }
+
+  footer .footer-cont-wrapper .footer-content {
+    padding: 40px 20px !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 40px;
+  }
+
+  footer .footer-rights {
+    margin-top: 0 !important;
+    padding: 20px !important;
+  }
+}
+
 @media screen and (max-width: 768px) {
   nav {
     justify-content: space-between;
@@ -27,6 +125,9 @@
 
   nav .nav-btn li a {
     margin-right: 0;
+    font-size: 22px;
+    padding: 15px 0;
+    display: block;
   }
 
   /* Hamburger Menu Styles */
@@ -54,8 +155,65 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  header{
+  header {
     background-size: cover;
+  }
+
+  /* Header Texts */
+  header .hero-section h2 {
+    font-size: 42px !important;
+    line-height: 1.3;
+    padding: 0 15px;
+  }
+
+  header .hero-section .counter {
+    font-size: 24px !important;
+    text-align: center;
+  }
+
+  /* Newsletter on Mobile */
+  .newsletter {
+    flex-direction: column;
+    height: auto;
+    gap: 30px;
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .newsletter .news-sub {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .newsletter .news-sub input {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 60px;
+    font-size: 18px;
+  }
+
+  /* Footer on Mobile */
+  footer .footer-cont-wrapper .footer-content {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+
+  footer .footer-nav .footer-nav-btn {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  footer .footer-rights {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  /* So images don't overflow */
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
