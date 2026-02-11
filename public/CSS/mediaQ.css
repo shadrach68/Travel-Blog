@@ -222,7 +222,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 769px) {
   header {
     background-position: center;
     background-size: cover;
@@ -287,6 +287,10 @@
 
       .popu-post {
         background-size: 307px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         p {
           font-size: 16px;
@@ -297,19 +301,18 @@
 
         .popu-btns {
           padding-left: 20px;
+          text-align: center;
 
           h3 {
             font-size: 19.64px;
-            padding-bottom: 20.12px;
-            margin-left: 10px;
-            line-height: 30px;
+            line-height: 20px;
+            max-width: 300px;
           }
 
           button {
             width: 21px;
             height: 21px;
             margin-bottom: 40px;
-            margin-left: 10px;
           }
         }
       }
@@ -388,7 +391,7 @@
     /* get in touch start */
     .get-in-touch {
       .g-i-t-btns {
-        grid-template-columns: repeat(2, 142px);
+        grid-template-columns: repeat(2, 155px);
 
         .button {
           line-height: 16px;
