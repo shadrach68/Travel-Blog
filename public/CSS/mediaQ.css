@@ -199,7 +199,6 @@
   }
 
   footer .footer-nav .footer-nav-btn {
-    flex-direction: column;
     align-items: center;
     gap: 10px;
   }
@@ -221,4 +220,347 @@
   .hamburger {
     display: none;
   }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    background-position: center;
+    background-size: cover;
+
+    .hero-section{
+
+      .location-icon {
+        position: static;
+        margin-top: 2rem;
+  
+        img{
+          width: 45px;
+          height: 45px;
+        }
+      }
+
+      .read-more {
+      margin-top: 2rem;
+    }
+
+      .scroll-txt {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    }
+  }
+
+  main {
+    /* ASIDE START */
+    /* about-sec start */
+    .about-sec {
+      border-radius: 40px;
+
+      p {
+        max-width: 250px;
+        line-height: 25px;
+      }
+
+      img {
+        width: 300px;
+      }
+    }
+    /* about-sec end */
+
+    /* categories start */
+    .categories {
+      width: 250.23px;
+      border-radius: 40px;
+
+      .cate-content {
+        ul li,
+        ol li {
+          font-size: 20px;
+        }
+      }
+    }
+    /* categories end */
+
+    /* popular post start */
+    .popular-post {
+      border-radius: 40px;
+
+      .popu-post {
+        background-size: 307px;
+
+        p {
+          font-size: 16px;
+          font-weight: 600;
+          padding-bottom: 33px;
+          margin-left: -10px;
+        }
+
+        .popu-btns {
+          padding-left: 20px;
+
+          h3 {
+            font-size: 19.64px;
+            padding-bottom: 20.12px;
+            margin-left: 10px;
+            line-height: 30px;
+          }
+
+          button {
+            width: 21px;
+            height: 21px;
+            margin-bottom: 40px;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    /* popular post end */
+
+    /* recent post start */
+    .recent-post {
+      border-radius: 40px;
+
+      .rece-posts {
+        gap: 13px;
+        padding: 0 0 20px 8px;
+
+        .rece-big {
+          font-size: 16px;
+          line-height: 20px;
+          max-width: 250px;
+        }
+
+        img {
+          width: 50px;
+          height: 50px;
+        }
+
+        .rece-sm {
+          font-size: 16px;
+          line-height: 13.81px;
+        }
+      }
+    }
+    /* recent post end */
+
+    /* gear start */
+    .gear {
+      border-radius: 40px;
+
+      h2 {
+        line-height: 29.39px;
+      }
+
+      h3 {
+        font-size: 27.65px;
+      }
+
+      button {
+        padding: 15px 20px;
+      }
+    }
+    /* gear end */
+
+    /* products start */
+    .product {
+      border-radius: 40px;
+
+      .products {
+        gap: 14px;
+        padding-bottom: 36px;
+
+        img {
+          width: 50px;
+          height: 50px;
+          margin-left: 8px;
+        }
+
+        .prod-name,
+        .prod-price {
+          font-size: 17px;
+          line-height: 18px;
+          max-width: 230px;
+        }
+      }
+    }
+    /* products end */
+
+    /* get in touch start */
+    .get-in-touch {
+      .g-i-t-btns {
+        grid-template-columns: repeat(2, 142px);
+
+        .button {
+          line-height: 16px;
+
+          p {
+            max-width: 40px;
+            margin-right: 55px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    /* get in touch end */
+
+    /* ASIDE END*/
+
+    /* ARTICLE (MAIN ARTICLES) START */
+
+    /* travelers-guide start */
+    .travelers-guide {
+      margin-top: 30px;
+      border-radius: 30px;
+
+      h3 {
+        font-weight: 600;
+        font-size: 28.64px;
+        max-width: 600px;
+        line-height: 36.98px;
+        padding-left: 25px;
+        margin-top: 26px;
+        margin-bottom: 19px;
+      }
+
+      .lorem {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 30px;
+        margin-bottom: 3rem;
+      }
+
+      .loc-comm {
+        padding: 0 25px;
+        margin-bottom: 20px;
+
+        img {
+          width: 18px;
+          height: 20px;
+        }
+
+        .loc,
+        .comm {
+          gap: 7px;
+          font-size: 15px;
+          font-weight: 400;
+        }
+      }
+    }
+    /* travelers-guide end */
+
+    /* doub-blog start */
+    .doub-blog {
+
+      .doub-cont {
+        border-radius: 30px;
+
+        h3 {
+          font-size: 25.64px;
+          margin-bottom: 80.78px;
+        }
+
+        .d-blog-loc-comm {
+          padding: 0 15px;
+
+          img{
+            width: 18px;
+            height: 20px;
+          }
+
+          .d-blog-loc,
+          .d-blog-comm {
+            gap: 13.15px;
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 19.87px;
+          }
+        }
+      }
+
+    }
+    /* doub-blog end */
+
+    /* travelers-guide2 start */
+    .travelers-guide2 {
+      border-radius: 30px;
+
+
+      h3 {
+        font-weight: 600;
+        font-size: 28.64px;
+        max-width: 600px;
+        line-height: 46.98px;
+        padding-left: 25px;
+        margin-top: 26px;
+        margin-bottom: 19px;
+      }
+
+     .lorem-love {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 30px;
+        margin-bottom: 3rem;
+      }
+
+      .loc-comm2 {
+        padding: 0 25px;
+        margin-bottom: 20px;
+
+        img {
+          width: 18px;
+          height: 20px;
+        }
+
+        .loc,
+        .comm {
+          gap: 7px;
+          font-size: 15px;
+          font-weight: 400;
+        }
+      }
+    }
+    /* travelers-guide2 end */
+
+    /* purchase start */
+    .purchase {
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      h2 {
+        font-weight: 600;
+        font-size: 30px;
+        margin: 13px 0 30.19px 10px;
+      }
+
+      button {
+        padding: 16px 25px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+    }
+    /* purchase end */
+    /* ARTICLE (MAIN ARTICLES) END */
+  }
+  /* main  end */
+
+  /* carousel section start */
+.carousel-section {
+  margin-bottom: 40px;
+}
+
+.carousel-track img {
+  height: 80%;
+  
+}
+
+.instagram-btn {
+  top: 40%;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 25px 8px;
+  border-radius: 35px;
+}
+/* carousel section end */
+
+
 }
