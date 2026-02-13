@@ -10,16 +10,16 @@ app.get("/", (req, res) => {
   res.render("index.ejs");
 });
 app.get("/about", (req, res) => {
-  res.render("index.ejs");
+  res.render("aboutus.ejs");
 });
 app.get("/destination", (req, res) => {
-  res.render("index.ejs");
+  res.render("destination.ejs");
 });
 app.get("/tips", (req, res) => {
-  res.render("index.ejs");
+  res.render("tipspage.ejs");
 });
 app.get("/contact", (req, res) => {
-  res.render("index.ejs");
+  res.render("contact.ejs");
 });
 
 app.listen(port, () => {
