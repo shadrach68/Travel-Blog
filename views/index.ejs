@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Red Explorers</title>
     <link rel="stylesheet" href="/CSS/style.css" />
-    <link rel="stylesheet" href="/CSS/mediaQ.css">
+    <link rel="stylesheet" href="/CSS/mediaQ.css" />
     <link
       href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css"
       rel="stylesheet"
@@ -22,7 +22,7 @@
   <body>
     <!-- header section start -->
     <header>
-    <%- include("partials/navbar.ejs") %>
+      <%- include("partials/navbar.ejs") %>
 
       <section class="hero-section">
         <p class="counter">
@@ -51,11 +51,7 @@
           <div class="about-cont">
             <img src="/images/about me pic.png" alt="my-picture" />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum in
-              vel massa donec sit. Mi ut risus sem malesuada ornare. Ac eu erat
-              eget et lorem est arcu. Gravida hendrerit sit blandit semper
-              lacus. Nulla amet suscipit sit lectus tortor. Dolor non eget
-              suspendisse leo scelerisque sed d.
+              I am a passionate traveler dedicated to exploring the world's most beautiful corners. My journey began with a simple backpack and a desire to see the unknown. Over the years, I've documented my experiences, sharing stories of culture, food, and adventure. Join me as I continue to discover new horizons and share the beauty of our planet.
             </p>
           </div>
           <a href="#">Read More</a>
@@ -98,12 +94,12 @@
             <div class="popu-btns">
               <h3>Finding Love & home in Tbilisi, Georgia</h3>
               <div class="main-btn">
-              <button type="button">
-                <img src="/images/left-arrow.png" alt="left-arrow" />
-              </button>
-              <button type="button">
-                <img src="/images/right-arrow.png" alt="right-arrow" />
-              </button>
+                <button type="button">
+                  <img src="/images/left-arrow.png" alt="left-arrow" />
+                </button>
+                <button type="button">
+                  <img src="/images/right-arrow.png" alt="right-arrow" />
+                </button>
               </div>
             </div>
           </div>
@@ -252,29 +248,28 @@
         <!-- travelers-guide start -->
         <section class="travelers-guide">
           <img src="/images/buspic.png" alt="bus-pic" />
-          <!-- <div class="travel-cont"> -->
-          <p class="date">July, 15, 2021 - Tips and Tricks</p>
-          <h3>
-            A traveler’s guide to Penang, Malaysia - Where to Eat, Drink, Sleep
-            and Explore
-          </h3>
-          <p class="lorem">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-            pharetra ac erat commodo non leo eget gravida viverra. Pharetra
-            pharetra.
-          </p>
+          <div class="travel-cont">
+            <p class="date">July, 15, 2021 - Tips and Tricks</p>
+            <h3>
+              A traveler’s guide to Penang, Malaysia - Where to Eat, Drink,
+              Sleep and Explore
+            </h3>
+            <p class="lorem">
+              Penang is a vibrant mix of cultures, known for its street art and incredible food scene. Discover the best hawker stalls, heritage hotels, and hidden temples in this pearl of the orient.
+            </p>
 
-          <div class="loc-comm">
-            <div class="loc">
-              <img src="/images/location.png" alt="location-icon" />
-              <p>Penang, Malaysia</p>
-            </div>
+            <div class="loc-comm">
+              <div class="loc">
+                <img src="/images/location.png" alt="location-icon" />
+                <p>Penang, Malaysia</p>
+              </div>
 
-            <div class="comm">
-              <img src="/images/comment.png" alt="message-icon" />
-              <p>comment (52)</p>
+              <div class="comm">
+                <img src="/images/comment.png" alt="message-icon" />
+                <p>comment (52)</p>
+              </div>
+              <!-- </div> -->
             </div>
-            <!-- </div> -->
           </div>
         </section>
         <!-- travelers-guide end -->
@@ -327,9 +322,7 @@
             <p class="date2">July, 15, 2021 - Tips and Tricks</p>
             <h3>Finding Love & home in Tbilisi, Georgia</h3>
             <p class="lorem-love">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-              pharetra ac erat commodo non leo eget gravida viverra. Pharetra
-              pharetra.
+              Tbilisi offers a unique blend of history and modernity. From its sulfur baths to its eclectic architecture, find out why this Georgian capital is capturing the hearts of travelers worldwide.
             </p>
 
             <div class="loc-comm2">
@@ -446,9 +439,7 @@
             <p class="date2">July, 15, 2021 - Tips and Tricks</p>
             <h3>Finding Love & home in Tbilisi, Georgia</h3>
             <p class="lorem-love">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-              pharetra ac erat commodo non leo eget gravida viverra. Pharetra
-              pharetra.
+              Tbilisi offers a unique blend of history and modernity. From its sulfur baths to its eclectic architecture, find out why this Georgian capital is capturing the hearts of travelers worldwide.
             </p>
 
             <div class="loc-comm2">
@@ -510,19 +501,17 @@
       <!-- main articles end -->
     </main>
     <!-- main end -->
-<%- include("partials/carousel.ejs") %>
+    <%- include("partials/carousel.ejs") %> <%-
+    include("partials/newsletter.ejs") %> <%- include("partials/footer.ejs") %>
 
-<%- include("partials/footer.ejs") %>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-btn");
 
-<script>
-  const hamburger = document.querySelector(".hamburger");
-  const navMenu = document.querySelector(".nav-btn");
-
-  hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-  });
-</script>
-
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>

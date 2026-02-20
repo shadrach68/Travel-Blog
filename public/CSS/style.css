@@ -60,13 +60,17 @@ nav {
 
       a {
         text-decoration: none;
-        margin-right: 105px;
+        margin-right: 65px;
         color: var(--orange-color);
+        padding: 10px 15px;
         font-weight: 500;
+        transition: all 0.5s ease-in-out;
       }
 
       a:hover:not(.hm-txt) {
-        border-bottom: 2px solid var(--orange-color);
+        background: var(--blue-color);
+        border-radius: 30px;
+        color: #fff;
       }
     }
 
@@ -129,14 +133,14 @@ header {
       font-size: 18px;
       font-weight: 700;
       font-family: var(--second-font);
-      margin-top: 2.8rem;
+      margin-top: 1rem;
     }
 
     .scroll-txt {
       font-size: 24px;
       font-weight: 500;
       font-family: var(--main-font);
-      margin-top: 2.8rem;
+      margin-top: 2rem;
       margin-bottom: 1rem;
     }
 
@@ -860,23 +864,24 @@ footer {
 
   /* footer-nav start */
   .footer-nav {
-    display: flex;
+    display: grid;
+    grid-template-columns: 337px 191px repeat(2, 153px);
     justify-content: space-around;
     align-items: center;
-    padding: 51px 304px 0 207px;
+    padding: 51px 213px 0 207px;
     font-family: var(--main-font);
     margin-bottom: 16px;
     font-weight: 700;
 
     .footer-nav-btn {
-      display: flex;
+      display: contents;
 
       li {
         list-style: none;
 
         a {
           text-decoration: none;
-          margin-left: 208px;
+          margin-left: 0;
           color: #000;
           font-weight: 500;
         }
@@ -893,7 +898,7 @@ footer {
     .footer-content {
       grid-template-columns: 337px 191px repeat(2, 153px);
       display: grid;
-      align-items: center;
+      align-items: start;
       justify-content: space-around;
       padding: 51px 213px 0 207px;
       font-family: var(--main-font);

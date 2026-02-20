@@ -1,0 +1,160 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --second-font: "Lato", sans-serif;
+  --orange-color: #ffa500;
+  --blue-color: #0336ff;
+  --box-shadow: 0 0 50px 10px rgba(168, 166, 166, 0.274);
+  --border-radius: 10px;
+}
+
+.travel-hdr {
+  background-image: url(/images/travel-bg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+  /* width: 100%; */
+  margin-bottom: -10rem;
+}
+
+.main{
+    padding: 0 70px;
+}
+
+.main .tips-motto{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 141px;
+    gap: 30px;
+}
+
+.main .tips-motto .tips-sm-text p{
+    max-width: 790px;
+    font-weight: 500;
+    font-size: 24px;
+    font-family: var(--main-font);
+    /* line-height: 40px; */
+
+    button{
+      border: none;
+      color: var(--orange-color);
+      font-size: 24px;
+      font-weight: 500;
+      font-family: var(--main-font);
+      background: none;
+      cursor: pointer;
+    }
+
+}
+.main .tips-motto .tips-big-text p{
+    max-width: 650px;
+    font-size: 64px;
+    font-family: var(--main-font);
+    font-weight: 700;
+
+
+    span{
+        color: var(--orange-color);
+    }
+
+}
+
+.hero-section-tipspage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  h2 {
+    font-size: 64px;
+    font-weight: 800;
+    font-family: var(--second-font);
+    max-width: 650px;
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+}
+/* header end */
+
+/* GRID */
+
+.tips-container {
+  display: grid;
+  width: 1300px;
+  height: 1551px;
+  grid-template-columns: repeat(3, 374px);
+  gap: 50px 40px;
+  margin-bottom: 99px;
+  justify-content: center;
+}
+
+/* CARD */
+
+.tip-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+}
+
+/* IMAGE */
+
+.tip-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* DATE */
+
+.tip-date {
+  padding: 15px 20px;
+  font-size: 18px;
+  color: #777;
+  font-family: var(--second-font);
+  font-weight: 700;
+}
+
+/* BLUE TITLE SECTION */
+
+.tip-title {
+  background: var(--blue-color);
+  color: #fff;
+  height: 116px;
+  font-size: 34px;
+  font-weight: 900;
+  font-family: var(--second-font);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 14px;
+  
+}
+
+/* FOOTER */
+
+.tip-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 20px;
+  margin-top: 31px;
+  font-size: 13px;
+  color: #444;
+}
+
+.tip-footer span {
+ display: block;
+}
+.tip-footer span img{
+  margin-right: 6px;
+  height: 18px;
+  width: 15px
+}
+
+

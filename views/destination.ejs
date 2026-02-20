@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destinations</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/destinations.css" />
+    <link rel="stylesheet" href="/CSS/mediaQ.css" />
+    <!-- Basic Icons -->
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Filled Icons -->
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css"
+      rel="stylesheet"
+    />
+    <!-- Brand Icons -->
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header section start -->
+    <div class="destination-hdr">
+      <%- include("partials/navbar.ejs") %>
+
+      <section class="hero-section-destination">
+        <h2>Destination</h2>
+      </section>
+    </div>
+    <!-- header section end -->
+
+    <!-- main start -->
+    <div class="main">
+      <section class="destination-motto">
+        <div class="dest-big-text">
+          <p><span>Where do </span> you want to go?</p>
+        </div>
+
+        <div class="dest-sm-text">
+          <p>
+            Discover the hidden gems of the world, from the bustling streets of
+            Tokyo to the serene landscapes of Patagonia. Whether you're seeking
+            adventure, relaxation, or cultural immersion, our guides are here to
+            inspire your next journey. Let's explore the unknown together.
+          </p>
+        </div>
+      </section>
+
+      <section class="continent-tabs">
+        <a href="/destination" class="tab <%= !locals.activeContinent ? 'active' : '' %>">All</a>
+        <a href="/destination?continent=South America" class="tab <%= locals.activeContinent === 'South America' ? 'active' : '' %>">South America</a>
+        <a href="/destination?continent=North America" class="tab <%= locals.activeContinent === 'North America' ? 'active' : '' %>">North America</a>
+        <a href="/destination?continent=Europe" class="tab <%= locals.activeContinent === 'Europe' ? 'active' : '' %>">Europe</a>
+        <a href="/destination?continent=Africa" class="tab <%= locals.activeContinent === 'Africa' ? 'active' : '' %>">Africa</a>
+        <a href="/destination?continent=Asia" class="tab <%= locals.activeContinent === 'Asia' ? 'active' : '' %>">Asia</a>
+      </section>
+
+      <section class="cards-container">
+        <% if (destinations.length > 0) { %>
+          <% destinations.forEach(destination => { %>
+            <div class="card">
+              <div class="card-image">
+                <img src="<%= destination.image %>" alt="<%= destination.title %>" />
+              </div>
+              <div class="card-content">
+                <p class="meta"><%= destination.date %></p>
+                <h3><%= destination.title %></h3>
+                <hr />
+                <div class="card-footer">
+                  <span class="location">
+                    <img src="/images/location.png" alt="location" /> <%= destination.location %>
+                  </span>
+                  <span class="comments">
+                    <img src="/images/comment.png" alt="comment" /> Comment (<%= destination.comments %>)
+                  </span>
+                </div>
+              </div>
+            </div>
+          <% }) %>
+        <% } else { %>
+          <p>No destinations found for this continent.</p>
+        <% } %>
+      </section>
+    </div>
+    <!-- main end -->
+
+    <%- include("partials/carousel.ejs") %> <%-
+    include("partials/newsletter.ejs") %> <%- include("partials/footer.ejs") %>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-btn");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

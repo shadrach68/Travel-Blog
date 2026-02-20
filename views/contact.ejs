@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/contact.css" />
+    <link rel="stylesheet" href="/CSS/mediaQ.css" />
+  </head>
+  <body>
+    <!-- header section start -->
+    <div class="contact-hdr">
+      <%- include("partials/navbar.ejs") %>
+
+      <section class="hero-section-contact">
+        <h2>Contact</h2>
+      </section>
+    </div>
+    <!-- header section end -->
+
+    <section class="contact-section">
+      <h3 class="contact-heading">
+        PLEASE, FEEL YOURSELF COMFORTABLE TO FILL IN OUR CONTACT FORM
+      </h3>
+
+      <form action="/contact" method="POST" class="contact-form">
+        <div class="row">
+          <input
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+            required
+          />
+          <input type="text" name="lastName" placeholder="Last Name" required />
+        </div>
+
+        <div class="row">
+          <input type="email" name="email" placeholder="Email" required />
+          <input type="text" name="subject" placeholder="Subject" required />
+        </div>
+
+        <div class="row full">
+          <textarea name="message" placeholder="Message" required></textarea>
+        </div>
+
+        <div class="submit-wrapper">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- carousel start -->
+    <section class="carousel-section">
+      <div class="instagram-carousel">
+        <div class="carousel-track">
+          <img src="/images/contpic1.png" alt="carousel pic1" />
+          <img src="/images/contpic2.png" alt="carousel pic2" />
+          <img src="/images/contpic3.png" alt="carousel pic3" />
+          <img src="/images/contpic4.png" alt="carousel pic4" />
+          <img src="/images/contpic5.png" alt="carousel pic5" />
+          <img src="/images/contpic6.png" alt="carousel pic6" />
+          <img src="/images/contpic7.png" alt="carousel pic7" />
+          <img src="/images/contpic4.png" alt="carousel pic8" />
+
+          <img src="/images/contpic1.png" alt="carousel pic1" />
+          <img src="/images/contpic2.png" alt="carousel pic2" />
+          <img src="/images/contpic3.png" alt="carousel pic3" />
+          <img src="/images/contpic4.png" alt="carousel pic4" />
+          <img src="/images/contpic5.png" alt="carousel pic5" />
+          <img src="/images/contpic6.png" alt="carousel pic6" />
+          <img src="/images/contpic7.png" alt="carousel pic7" />
+          <img src="/images/contpic4.png" alt="carousel pic8" />
+        </div>
+      </div>
+    </section>
+    <!-- carousel end -->
+
+    <%- include("partials/newsletter.ejs") %> <%- include("partials/footer.ejs")
+    %>
+  </body>
+</html>

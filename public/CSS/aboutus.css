@@ -1,0 +1,27 @@
+.about-hdr {
+  background-image: url(/images/aboutus\ pic.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+  /* width: 100%; */
+  margin-bottom: -10rem;
+}
+
+.hero-section-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  h2 {
+    font-size: 64px;
+    font-weight: 800;
+    font-family: var(--second-font);
+    max-width: 650px;
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+}
+/* header end */
