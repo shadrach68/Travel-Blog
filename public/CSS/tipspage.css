@@ -84,7 +84,7 @@
   width: 1300px;
   height: 1551px;
   grid-template-columns: repeat(3, 374px);
-  gap: 50px 40px;
+  gap: 50px 100px;
   margin-bottom: 99px;
   justify-content: center;
   align-items: center;
