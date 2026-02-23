@@ -19,6 +19,9 @@
 
 .main{
     padding: 0 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .main .tips-motto{
