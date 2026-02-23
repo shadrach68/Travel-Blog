@@ -45,7 +45,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 141px;
-  gap: 30px;
+  gap: 10px;
 }
 
 .aboutMain .aboutus-motto .aboutus-sm-text p {
@@ -60,6 +60,12 @@
   font-size: 40px;
   font-family: var(--main-font);
   font-weight: 400;
+  color: gray;
+
+  strong{
+    color: #000;
+    font-weight: 500;
+  }
 
   span {
     color: var(--orange-color);
@@ -79,3 +85,90 @@
   margin-top: 55px;
 }
 /* aboutMain end */
+
+/* aboutarticles start */
+.aboutArticles {
+  display: grid;
+  grid-template-columns: 640px 615px;
+  gap: 47px;
+  margin-top: 10rem;
+}
+
+.aboutArticles h2{
+  margin-bottom: 37px;
+  font-family: var(--second-font);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.aboutArticles p{
+  font-family: var(--second-font);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.aboutArticles .ourStory p,.whoAreRedExplorers p{
+  margin-bottom: 10px;
+}
+
+.aboutArticles .aboutCameraMan p, .what-learn p{
+  margin-bottom: 30px;
+}
+
+.aboutArticles .what-learn{
+
+
+h3{
+  margin: 32px 0;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: var(--second-font);
+  line-height: 40px;
+}
+
+li{
+  list-style: none;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: var(--second-font)
+}
+}
+/* aboutarticles end */
+
+/* carousel section start */
+.car-carousel-section {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 100px;
+  margin-bottom: 90px;
+}
+
+/* Carousel viewport */
+.car-carousel {
+  position: relative;
+  height: 296px;
+  overflow: hidden;
+}
+.car-carousel:hover .carousel-track {
+  animation-play-state: paused;
+}
+
+/* Moving track */
+.car-carousel-track {
+  display: flex;
+  height: 100%;
+  width: max-content;
+
+  animation: scroll-left 30s linear infinite;
+}
+
+.car-carousel-track img {
+  width: 260.7px;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin: 0 20px;
+}
