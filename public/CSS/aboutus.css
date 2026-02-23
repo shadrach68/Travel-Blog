@@ -91,7 +91,7 @@
   display: grid;
   grid-template-columns: 640px 615px;
   justify-content: space-between;
-  gap: 47px;
+  gap: 47px 0;
   margin-top: 10rem;
 }
 
@@ -145,6 +145,8 @@ li{
   overflow: hidden;
   margin-top: 100px;
   margin-bottom: 90px;
+  background: #EDEDED;
+  padding: 10px 0;
 }
 
 /* Carousel viewport */
@@ -153,7 +155,7 @@ li{
   height: 296px;
   overflow: hidden;
 }
-.car-carousel:hover .carousel-track {
+.car-carousel:hover .car-carousel-track {
   animation-play-state: paused;
 }
 
