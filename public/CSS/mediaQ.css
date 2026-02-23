@@ -365,6 +365,7 @@
   .tips-container {
     grid-template-columns: 1fr;
     gap: 30px;
+    margin-left: 0;
   }
 
   /* About Us Page Responsive (768px) */
