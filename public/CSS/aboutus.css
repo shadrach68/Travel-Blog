@@ -67,6 +67,10 @@
   }
 }
 
+.aboutmain-sec-pic img{
+  width: 1600px;
+}
+
 .aboutmain-sec-pic p {
   font-weight: 700;
   font-size: 18px;
