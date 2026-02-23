@@ -175,3 +175,77 @@ li{
   flex-shrink: 0;
   margin: 0 20px;
 }
+
+/* customerMain start */
+.customerMain {
+  padding: 70px;
+}
+
+.customerMain .customer-motto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 10px;
+}
+
+.customerMain .customer-motto .customer-sm-text p {
+  max-width: 640px;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: var(--second-font);
+  line-height: 40px;
+}
+.customerMain .customer-motto .customer-big-text p {
+  max-width: 450px;
+  font-size: 40px;
+  font-family: var(--main-font);
+  font-weight: 400;
+
+  span {
+    color: var(--orange-color);
+    border-bottom: 2px solid var(--orange-color);
+  }
+}
+/* customerMain end*/
+
+/* aboutAside start */
+.aboutAside{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 81px;
+}
+
+.aboutasidecont{
+ width: 349px;
+ height: 471px;
+ padding: 20px 30px;
+ border-radius: 30px;
+ box-shadow: var(--box-shadow);
+ margin-bottom: 50px;
+
+  p{
+    max-width: 260px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--second-font);
+    line-height: 40px;
+  }
+
+  h3{
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    font-family: var(--second-font);
+    line-height: 20px
+  }
+
+  small{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--second-font);
+    line-height: 50px;
+  }
+}
+/* aboutAside end */

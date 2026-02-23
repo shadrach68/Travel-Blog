@@ -143,6 +143,43 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
   }
+
+  /* About Us Page Responsive (1200px) */
+  .about-hdr {
+    margin-bottom: -8rem;
+  }
+
+  .aboutMain {
+    padding: 0 20px;
+  }
+
+  .aboutMain .aboutus-motto {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 80px;
+    gap: 30px;
+  }
+
+  .aboutMain .aboutus-motto .aboutus-sm-text p {
+    max-width: 100%;
+  }
+
+  .aboutmain-sec-pic img {
+    width: 100%;
+    height: auto;
+  }
+
+  .aboutArticles {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 5rem;
+  }
+
+  .customerMain .customer-motto {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -329,6 +366,39 @@
     grid-template-columns: 1fr;
     gap: 30px;
   }
+
+  /* About Us Page Responsive (768px) */
+  .about-hdr {
+    height: 60vh;
+    margin-bottom: -5rem;
+  }
+
+  .hero-section-about h2 {
+    font-size: 42px !important;
+    margin-top: 0 !important;
+  }
+
+  .aboutMain .aboutus-motto .aboutus-big-text p {
+    font-size: 32px;
+  }
+
+  .aboutmain-sec-pic p {
+    margin-top: 30px;
+  }
+
+  .car-carousel-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .aboutAside {
+    flex-direction: column;
+  }
+
+  .aboutasidecont {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -374,6 +444,11 @@
     background-position: center;
     background-size: cover;
     margin-bottom: 100px;
+  }
+  .about-hdr {
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 50px;
   }
 
   main {
@@ -699,6 +774,20 @@
     .tip-footer {
       flex-wrap: wrap;
       gap: 10px;
+    }
+
+    /* About Us Page Responsive (480px) */
+    .aboutMain .aboutus-motto .aboutus-big-text p {
+      font-size: 28px;
+    }
+
+    .aboutArticles h2 {
+      font-size: 28px;
+    }
+
+    .aboutArticles p {
+      font-size: 16px;
+      line-height: 30px;
     }
   }
   /* main  end */
