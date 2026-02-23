@@ -90,6 +90,7 @@
 .aboutArticles {
   display: grid;
   grid-template-columns: 640px 615px;
+  justify-content: space-between;
   gap: 47px;
   margin-top: 10rem;
 }
