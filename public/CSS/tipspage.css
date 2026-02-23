@@ -47,7 +47,7 @@
 
 }
 .main .tips-motto .tips-big-text p{
-    max-width: 650px;
+    max-width: 550px;
     font-size: 64px;
     font-family: var(--main-font);
     font-weight: 700;
@@ -84,9 +84,10 @@
   width: 1300px;
   height: 1551px;
   grid-template-columns: repeat(3, 374px);
-  gap: 50px 40px;
+  gap: 50px 100px;
   margin-bottom: 99px;
   justify-content: center;
+  align-items: center;
 }
 
 /* CARD */
