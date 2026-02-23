@@ -1,3 +1,12 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --second-font: "Lato", sans-serif;
+  --orange-color: #ffa500;
+  --blue-color: #0336ff;
+  --box-shadow: 0 0 50px 10px rgba(168, 166, 166, 0.274);
+  --border-radius: 10px;
+}
+
 .about-hdr {
   background-image: url(/images/aboutus\ pic.png);
   background-position: top;
@@ -21,7 +30,7 @@
     font-family: var(--second-font);
     max-width: 650px;
     text-align: center;
-    margin-top: 5.5rem;
+    margin-top: 10.5rem;
   }
 }
 /* header end */
@@ -47,13 +56,15 @@
   line-height: 40px;
 }
 .aboutMain .aboutus-motto .aboutus-big-text p {
-  /* max-width: 650px; */
-  font-size: 64px;
-  font-family: var(--second-font);
-  font-weight: 700;
+  max-width: 600px;
+  font-size: 40px;
+  font-family: var(--main-font);
+  font-weight: 400;
 
   span {
     color: var(--orange-color);
+    border-bottom: 2px solid var(--orange-color);
+  
   }
 }
 /* aboutMain end */
