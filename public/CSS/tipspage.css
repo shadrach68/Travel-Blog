@@ -84,8 +84,9 @@
   width: 1300px;
   height: 1551px;
   grid-template-columns: repeat(3, 374px);
-  gap: 50px 100px;
+  gap: 50px ;
   margin-bottom: 99px;
+  margin-left: 50px;
   justify-content: center;
   align-items: center;
 }
@@ -98,7 +99,6 @@
   overflow: hidden;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
   transition: 0.3s ease;
-  margin-left: 50px;
 }
 
 .tip-card:hover {
