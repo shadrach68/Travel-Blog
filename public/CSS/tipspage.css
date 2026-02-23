@@ -19,9 +19,6 @@
 
 .main{
     padding: 0 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
 
 .main .tips-motto{
@@ -87,9 +84,9 @@
   width: 1300px;
   height: 1551px;
   grid-template-columns: repeat(3, 374px);
-  gap: 50px 100px;
+  gap: 50px 200px;
   margin-bottom: 99px;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
