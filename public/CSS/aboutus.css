@@ -183,10 +183,9 @@ li{
 
 .customerMain .customer-motto {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-bottom: 50px;
-  gap: 10px;
 }
 
 .customerMain .customer-motto .customer-sm-text p {
