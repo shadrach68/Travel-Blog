@@ -49,7 +49,7 @@
 }
 
 .aboutMain .aboutus-motto .aboutus-sm-text p {
-  max-width: 408px;
+  max-width: 640px;
   font-weight: 700;
   font-size: 18px;
   font-family: var(--second-font);
@@ -64,7 +64,14 @@
   span {
     color: var(--orange-color);
     border-bottom: 2px solid var(--orange-color);
-  
   }
+}
+
+.aboutmain-sec-pic p {
+  font-weight: 700;
+  font-size: 18px;
+  font-family: var(--second-font);
+  line-height: 40px;
+  margin-top: 55px;
 }
 /* aboutMain end */
